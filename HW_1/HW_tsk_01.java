@@ -17,7 +17,7 @@ public class HW_tsk_01 {
         System.out.printf("Triangle number from %d = %d", input_num, triangle_number(input_num));
         System.out.println();
         System.out.printf("%d! = %d", input_num, factorial(input_num));
-
+        sc.close();
     }
     public static int triangle_number(int num){
         int result = 0;
