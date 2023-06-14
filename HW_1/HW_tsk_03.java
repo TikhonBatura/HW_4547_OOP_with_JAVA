@@ -7,13 +7,13 @@ public class HW_tsk_03 {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Please, enter 1th number: ");
-        Double num_1 = sc.nextDouble();
+        double num_1 = sc.nextDouble();
         System.out.println();
         System.out.print("Please, choose operator (+),(-),(*),(/): ");
         String operator = sc.next();
         System.out.println();
         System.out.print("Please, enter 2th number: ");
-        Double num_2 = sc.nextDouble();
+        double num_2 = sc.nextDouble();
 
         switch (operator) {
             case ("+"):
