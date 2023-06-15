@@ -1,12 +1,12 @@
-июн. 14, 2023 11:41:05 PM HomeWork.HW_2.Task_2.Task_2 main
-INFO: INFO: 
-июн. 14, 2023 11:41:05 PM HomeWork.HW_2.Task_2.Task_2 main
-INFO: INFO: 
-июн. 14, 2023 11:41:05 PM HomeWork.HW_2.Task_2.Task_2 main
-INFO: INFO: 
-июн. 14, 2023 11:41:05 PM HomeWork.HW_2.Task_2.Task_2 main
-INFO: INFO: 
-июн. 14, 2023 11:41:05 PM HomeWork.HW_2.Task_2.Task_2 main
-INFO: INFO: 
-июн. 14, 2023 11:41:05 PM HomeWork.HW_2.Task_2.Task_2 main
-INFO: INFO: 
+июн. 15, 2023 8:26:16 PM HomeWork.HW_2.Task_2.Task_2 main
+INFO: Step - 1 [34, 25, 64, 22, 11, 9, 90]
+июн. 15, 2023 8:26:16 PM HomeWork.HW_2.Task_2.Task_2 main
+INFO: Step - 2 [25, 34, 22, 11, 9, 64, 90]
+июн. 15, 2023 8:26:16 PM HomeWork.HW_2.Task_2.Task_2 main
+INFO: Step - 3 [25, 22, 11, 9, 34, 64, 90]
+июн. 15, 2023 8:26:16 PM HomeWork.HW_2.Task_2.Task_2 main
+INFO: Step - 4 [22, 11, 9, 25, 34, 64, 90]
+июн. 15, 2023 8:26:16 PM HomeWork.HW_2.Task_2.Task_2 main
+INFO: Step - 5 [11, 9, 22, 25, 34, 64, 90]
+июн. 15, 2023 8:26:16 PM HomeWork.HW_2.Task_2.Task_2 main
+INFO: Step - 6 [9, 11, 22, 25, 34, 64, 90]

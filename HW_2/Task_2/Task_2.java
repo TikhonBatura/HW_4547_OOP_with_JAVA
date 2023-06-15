@@ -21,7 +21,7 @@ public class Task_2 {
         //data.setFormatter(xml);
 
 
-        int[] arr = {64, 34, 25, 12, 22, 11, 90};
+        int[] arr = {64, 34, 25, 90, 22, 11, 9};
         System.out.println(Arrays.toString(arr));
         int i, j, temp;
         int step = 1;
@@ -35,9 +35,9 @@ public class Task_2 {
 
                 }
             }
-            logger.info("INFO: ");
-            System.out.println("Step - " + step + " " + Arrays.toString(arr));
+            logger.info("Step - " + step + " " + Arrays.toString(arr));
             step++;
         }
+        System.out.println("Step - " + step + " " + Arrays.toString(arr));
     }
 }
