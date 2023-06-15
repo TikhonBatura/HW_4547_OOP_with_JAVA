@@ -15,7 +15,7 @@ public class HW_tsk_03 {
 
         Logger logger = Logger.getLogger(HW_tsk_03.class.getName());
         logger.setLevel(Level.INFO);
-        FileHandler data = new FileHandler("C:\\Users\\loki_\\OneDrive\\Документы\\Учеба\\Разработчик\\8.ОПП (на JAVA)\\HomeWork\\HW_1\\calc_log.txt");
+        FileHandler data = new FileHandler("C:\\Users\\loki_\\OneDrive\\Документы\\Учеба\\Разработчик\\8.ОПП (на JAVA)\\HomeWork\\HW_1\\calc_log.txt", true);
         logger.addHandler(data);
         SimpleFormatter sFormat = new SimpleFormatter();
         data.setFormatter(sFormat);
