@@ -96,6 +96,7 @@ public class Task_01 {
 
                 case (5):
                     flag = true;
+                    break;
 
                 default:
                     System.out.println("incorrect input");
