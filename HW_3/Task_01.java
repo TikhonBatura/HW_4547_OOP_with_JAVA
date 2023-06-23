@@ -17,7 +17,7 @@ public class Task_01 {
         while (!flag) {
 
 
-            List<Integer> task_array = new ArrayList<>(Arrays.asList(1, 5, 12, 14, 25, 4, 16, -3));
+            List<Integer> task_array = new ArrayList<>(Arrays.asList(1, 5, 12, 14, 25, 4, -3, 16));
             List<Integer> result_array = new ArrayList<>();
             System.out.println();
             System.out.println("Please select, would you like to do with current array: ");
