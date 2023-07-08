@@ -1,7 +1,7 @@
-package ru.gb.lessons.interfaces.core.clients.home.impl;
+package HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.home.impl;
 
-import ru.gb.lessons.interfaces.core.clients.home.Pet;
-import ru.gb.lessons.interfaces.core.clients.owners.Owner;
+import HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.home.Pet;
+import HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.owners.Owner;
 
 import java.time.LocalDate;
 

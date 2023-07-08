@@ -1,7 +1,7 @@
-package ru.gb.lessons.interfaces.core.clients;
+package HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients;
 
-import ru.gb.lessons.interfaces.core.clients.owners.Owner;
-import ru.gb.lessons.interfaces.core.clients.supports.Record;
+import HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.owners.Owner;
+import HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.supports.Record;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -18,7 +18,7 @@ public abstract class Animal {
     protected String name; // кличка животного
     protected int numberOfLimbs; //количество конечностей
     protected LocalDate registrationDate; //дата регистрации животного в клинике
-    protected Owner owner; // тот, кто принес животное в клинику
+    public Owner owner; // тот, кто принес животное в клинику
     protected List<Record> records; // записи о болезнях животного
 
     public Animal() {

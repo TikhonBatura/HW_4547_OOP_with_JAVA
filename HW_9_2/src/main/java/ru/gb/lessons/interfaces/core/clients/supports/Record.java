@@ -1,4 +1,4 @@
-package ru.gb.lessons.interfaces.core.clients.supports;
+package HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.supports;
 
 import java.util.Date;
 

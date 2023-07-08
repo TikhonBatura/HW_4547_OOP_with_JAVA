@@ -1,7 +1,7 @@
-package ru.gb.lessons.interfaces.core.clients.owners;
+package HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.owners;
 
-import ru.gb.lessons.interfaces.core.clients.Animal;
-import ru.gb.lessons.interfaces.core.clients.Human;
+import HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.Animal;
+import HomeWork.HW_9_2.src.main.java.ru.gb.lessons.interfaces.core.clients.Human;
 
 import java.util.ArrayList;
 import java.util.List;

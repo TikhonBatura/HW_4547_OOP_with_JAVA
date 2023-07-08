@@ -88,9 +88,7 @@ public class program {
 
                     for (Map.Entry<String, Object> el : userCharacteristics.entrySet()) {
                         if (el.getKey().equals("RAM")) {
-                            Iterator<notebook> it = stock.iterator();
-                            while (it.hasNext()) {
-                                notebook nb = (notebook) it.next();
+                            for (notebook nb : stock) {
                                 if (nb.getRAM() >= (Integer) el.getValue()) {
                                     result.add(nb);
                                 }
@@ -98,9 +96,7 @@ public class program {
                         }
 
                         if (el.getKey().equals("HD")) {
-                            Iterator<notebook> it = stock.iterator();
-                            while (it.hasNext()) {
-                                notebook nb = (notebook) it.next();
+                            for (notebook nb : stock) {
                                 if (nb.getHD() >= (Integer) el.getValue()) {
                                     result.add(nb);
                                 }
@@ -108,19 +104,15 @@ public class program {
                         }
 
                         if (el.getKey().equals("OS")) {
-                            Iterator<notebook> it = stock.iterator();
-                            while (it.hasNext()) {
-                                notebook nb = (notebook) it.next();
-                                if (nb.getOS().equals (el.getValue())); {
+                            for (notebook nb : stock) {
+                                if (nb.getOS().equals(el.getValue())) {
                                     result.add(nb);
                                 }
                             }
                         }
 
                         if (el.getKey().equals("color")) {
-                            Iterator<notebook> it = stock.iterator();
-                            while (it.hasNext()) {
-                                notebook nb = (notebook) it.next();
+                            for (notebook nb : stock) {
                                 if (nb.getColor().equals(el.getValue())) {
                                     result.add(nb);
                                 }
@@ -128,9 +120,7 @@ public class program {
                         }
                     }
 
-                    Iterator it = result.iterator();
-                    while (it.hasNext()) {
-                        notebook nb = (notebook) it.next();
+                    for (notebook nb : result) {
                         System.out.println("\n founded -> " + nb.toString());
                         System.out.println();
                     }
