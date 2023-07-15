@@ -1,4 +1,4 @@
-package HomeWork.HW_9_4;
+package HomeWork.HW_9_4.LinkedArrays;
 
 
 public class GBLinkedList <L> implements Linked<L> {

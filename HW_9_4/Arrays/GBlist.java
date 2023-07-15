@@ -1,4 +1,4 @@
-package HomeWork.HW_9_4;
+package HomeWork.HW_9_4.Arrays;
 
 public interface GBlist <T> extends Iterable<T> {
 

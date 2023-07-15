@@ -1,4 +1,4 @@
-package HomeWork.HW_9_4;
+package HomeWork.HW_9_4.LinkedArrays;
 
 import java.util.Iterator;
 

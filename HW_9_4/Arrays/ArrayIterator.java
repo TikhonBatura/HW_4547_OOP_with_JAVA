@@ -1,4 +1,4 @@
-package HomeWork.HW_9_4;
+package HomeWork.HW_9_4.Arrays;
 
 import java.util.Iterator;
 
