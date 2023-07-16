@@ -28,7 +28,8 @@ public class UserView {
                     String phone = prompt("Номер телефона: ");
                     userController.saveUser(new User(firstName, lastName, phone));
                     break;
-                case READ:
+                case FINDBYID:
+                    case READ:
                     String id = prompt("Идентификатор пользователя: ");
                     try {
                         User user = userController.readUser(Long.parseLong(id));
