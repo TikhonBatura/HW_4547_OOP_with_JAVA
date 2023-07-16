@@ -60,6 +60,14 @@ public class UserView {
                         throw new RuntimeException(e);
                     }
                     break;
+                case DELETE:
+                    try {
+                        Long userID = Long.parseLong(prompt("¬ведите идентификатор пользовател€: "));
+                        userController.deleteUser(userID);
+                    } catch (Exception e) {
+                        throw new RuntimeException(e);
+                    }
+                    break;
             }
         }
     }

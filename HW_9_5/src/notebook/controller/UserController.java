@@ -37,4 +37,13 @@ public class UserController {
         repository.update(userID, user);
 
     }
+
+    public void deleteUser(Long userID) {
+        List<User> users = repository.findAll();
+        for (User user : users) {
+            if (Objects.equals(user.getId(), userID)) {
+                repository.delete(user.getId());
+            }
+        }
+    }
 }
