@@ -3,79 +3,45 @@ package notebook.view;
 import notebook.controller.UserController;
 import notebook.model.User;
 import notebook.util.Commands;
+import notebook.view.Assistants.Functions;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
-public class UserView {
-    private final UserController userController;
-
+public class UserView extends Functions {
     public UserView(UserController userController) {
-        this.userController = userController;
+        super(userController);
     }
 
     public void run(){
         Commands com;
 
         while (true) {
-            String command = prompt("Введите команду: ");
+            System.out.print("Доступные команды: ");
+            System.out.println(Arrays.toString(Commands.values()));
+            String command = prompt("Введите команду: ").toUpperCase();
             com = Commands.valueOf(command);
             if (com == Commands.EXIT) return;
             switch (com) {
                 case CREATE:
-                    String firstName = prompt("Имя: ");
-                    String lastName = prompt("Фамилия: ");
-                    String phone = prompt("Номер телефона: ");
-                    userController.saveUser(new User(firstName, lastName, phone));
+                    create();
                     break;
                 case FINDBYID:
                     case READ:
-                    String id = prompt("Идентификатор пользователя: ");
-                    try {
-                        User user = userController.readUser(Long.parseLong(id));
-                        System.out.println(user);
-                        System.out.println();
-                    } catch (Exception e) {
-                        throw new RuntimeException(e);
-                    }
+                        read();
                     break;
                 case LIST:
-
-                    try {
-                        List<User> users = userController.readAllUsers();
-                        System.out.println(users);
-
-                    } catch (Exception e) {
-                        throw new RuntimeException(e);
-                    }
+                    list();
                     break;
                 case UPDATE:
-                    try {
-                        firstName = prompt("Имя: ");
-                        lastName = prompt("Фамилия: ");
-                        phone = prompt("Номер телефона: ");
-                        Long userID = Long.parseLong(prompt("Введите идентификатор пользователя: "));
-                        User updated = new User(firstName, lastName, phone);
-                        userController.updateUser(userID, updated);
-                    } catch (Exception e) {
-                        throw new RuntimeException(e);
-                    }
+                    update();
                     break;
                 case DELETE:
-                    try {
-                        Long userID = Long.parseLong(prompt("Введите идентификатор пользователя: "));
-                        userController.deleteUser(userID);
-                    } catch (Exception e) {
-                        throw new RuntimeException(e);
-                    }
+                    delete();
                     break;
             }
         }
     }
 
-    private String prompt(String message) {
-        Scanner in = new Scanner(System.in);
-        System.out.print(message);
-        return in.nextLine();
-    }
 }
