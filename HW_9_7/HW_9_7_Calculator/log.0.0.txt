@@ -1,0 +1,4 @@
+июл. 29, 2023 9:19:26 PM Main main
+INFO: Method main in model package started
+июл. 29, 2023 9:27:46 PM Main main
+INFO: Method main in model package started
